@@ -6,33 +6,31 @@
   body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.5; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
   .container { width: 100%; max-width: 900px; margin: 20px auto; background-color: #ffffff; border: 1px solid #ddd; }
   .header { background-color: #000; color: #ffffff; padding: 30px; text-align: center; }
-  .alert { background-color: #d90429; color: white; text-align: center; padding: 10px; font-weight: bold; font-size: 16px; letter-spacing: 1px; }
+  .header h1 { margin: 0; font-size: 26px; letter-spacing: 1px; }
+  .header p { margin: 5px 0 0 0; font-size: 18px; color: #ffbe0b; font-weight: bold; text-transform: uppercase; }
   
+  .alert { background-color: #d90429; color: white; text-align: center; padding: 12px; font-weight: bold; font-size: 16px; border-bottom: 4px solid #a4133c; }
   .content { padding: 20px; }
-  .awb-label { background-color: #f8f9fa; border-left: 5px solid #d90429; padding: 10px 15px; margin: 20px 0 10px 0; font-weight: bold; font-size: 14px; color: #555; }
   
   table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-  th { background-color: #f2f2f2; text-align: left; padding: 12px; border-bottom: 2px solid #333; font-size: 13px; text-transform: uppercase; }
+  th { background-color: #f2f2f2; text-align: left; padding: 12px; border-bottom: 2px solid #333; font-size: 12px; text-transform: uppercase; }
   td { padding: 10px; border-bottom: 1px solid #eee; font-size: 13px; }
   
-  .qty-col { width: 10%; font-weight: bold; }
-  .pack-col { width: 10%; color: #666; }
-  .desc-col { width: 65%; font-weight: 500; }
-  .price-col { width: 15%; text-align: right; font-weight: bold; color: #d90429; font-size: 15px; }
+  .price-col { text-align: right; font-weight: bold; color: #333; }
+  
+  /* ESTILO ESPECIFICO PARA FREEDOM */
+  .freedom-row { color: #d90429; font-weight: bold; }
+  .freedom-row .price-col { color: #d90429; }
 
   .cta-container { text-align: center; padding: 30px; }
-  .btn { background-color: #2b9348; color: white; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px; display: inline-block; }
+  .btn { background-color: #2b9348; color: white; padding: 15px 40px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px; display: inline-block; transition: 0.3s; }
   .footer { background-color: #f9f9f9; padding: 20px; text-align: center; font-size: 12px; color: #888; border-top: 1px solid #eee; }
 
-  /* RESPONSIVE DESIGN FOR MOBILE */
-  @media only screen and (max-width: 600px) {
-    .container { margin: 0; border: none; }
-    th { font-size: 11px; padding: 8px; }
-    td { font-size: 12px; padding: 8px; }
-    .desc-col { width: 50%; }
-    .price-col { width: 20%; }
-    .header h1 { font-size: 18px; }
-    .btn { width: 80%; display: block; margin: 0 auto; }
+  @media screen and (max-width: 600px) {
+    .header h1 { font-size: 20px; }
+    .header p { font-size: 14px; }
+    th { font-size: 10px; padding: 6px; }
+    td { font-size: 11px; padding: 6px; }
   }
 </style>
 </head>
@@ -40,99 +38,71 @@
 
   <div class="container">
     <div class="header">
-      <h1 style="margin:0;">MIAMI FRESH INVENTORY</h1>
-      <p style="margin:5px 0 0 0; opacity: 0.8;">In-Stock & Ready for Immediate Pickup</p>
+      <h1>MUCH FLOWERS - MIAMI STOCK</h1>
+      <p>🔥 UNBEATABLE PRICES - SHOP OUR HOT SALE NOW! 🔥</p>
     </div>
 
-    <div class="alert">
-       🚨 SPECIAL PRICE DROP - LIMITED STOCK 🚨
-    </div>
+    <div class="alert">⚡ INVENTORY MOVING FAST - FIRST COME, FIRST SERVED ⚡</div>
 
     <div class="content">
-      <p>Dear Customer, <br>Please review our current availability in Miami. Orders are processed on a first-come, first-served basis.</p>
-
-      <div class="awb-label">PRICE REDUCED</div>
       <table>
         <thead>
           <tr>
-            <th class="qty-col">Box</th>
-            <th class="pack-col">Pack</th>
-            <th class="desc-col">Variety / Description</th>
-            <th class="price-col">Price</th>
+            <th>Box</th>
+            <th>Pack</th>
+            <th>Product Description</th>
+            <th style="text-align: right;">Price/St</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1 QB</td>
-            <td>120ST</td>
-            <td>STOCK HOT PINK 70CM</td>
-            <td class="price-col">$0.25</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="awb-label">FRESH ARRIVAL</div>
-      <table>
-        <thead>
-          <tr>
-            <th class="qty-col">Box</th>
-            <th class="pack-col">Pack</th>
-            <th class="desc-col">Variety / Description</th>
-            <th class="price-col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1 QB</td><td>180ST</td><td>ACHILLEA PASTEL 55CM ORANGE</td><td class="price-col">$1.06</td></tr>
-          <tr><td>1 QB</td><td>180ST</td><td>ACHILLEA PASTEL 60CM ORANGE</td><td class="price-col">$1.08</td></tr>
-          <tr><td>1 QB</td><td>60ST</td><td>CHRYSANTHEMUM YOLK 70CM</td><td class="price-col">$0.58</td></tr>
-          <tr><td>1 QB</td><td>300ST</td><td>CRASPEDIA BILLY BALLS 60CM YELLOW</td><td class="price-col">$0.93</td></tr>
-          <tr><td>1 QB</td><td>300ST</td><td>CRASPEDIA BILLY BALLS 70CM YELLOW</td><td class="price-col">$0.98</td></tr>
-          <tr><td>1 QB</td><td>120ST</td><td>GYPSOPHILA XLENCE 250GR WHITE</td><td class="price-col">$4.10</td></tr>
-          <tr><td>1 QB</td><td>160ST</td><td>HYPERICUM SUPER 60CM GREEN</td><td class="price-col">$0.34</td></tr>
-          <tr><td>1 QB</td><td>160ST</td><td>HYPERICUM SUPER 60CM RED</td><td class="price-col">$0.34</td></tr>
-          <tr><td>1 QB</td><td>140ST</td><td>HYPERICUM SUPER 70CM RED</td><td class="price-col">$0.37</td></tr>
-          <tr><td>1 QB</td><td>140ST</td><td>HYPERICUM SUPER 70CM WHITE</td><td class="price-col">$0.37</td></tr>
-          <tr><td>1 QB</td><td>120ST</td><td>NIGELLA BLACK PODS 60CM BLACK</td><td class="price-col">$0.49</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE BUMBLEBEE 60CM</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE CABARET 50CM</td><td class="price-col">$0.58</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE CABARET 60CM</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE COTTON X-PRESSION 60CM BLUSH</td><td class="price-col">$0.78</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE FREEDOM 50CM RED</td><td class="price-col">$0.72</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE FREEDOM 60CM RED</td><td class="price-col">$0.84</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE FREEDOM 70CM RED</td><td class="price-col">$0.95</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE HOT EXPLORER 60CM</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE HOT EXPLORER 70CM</td><td class="price-col">$0.70</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE MONDIAL 50CM WHITE</td><td class="price-col">$0.67</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE MONDIAL 60CM WHITE</td><td class="price-col">$0.72</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE NINA 50CM ORANGE</td><td class="price-col">$0.61</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE NINA 60CM ORANGE</td><td class="price-col">$0.67</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE PALOMA 50CM BICOLOR PINK</td><td class="price-col">$0.58</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE PALOMA 60CM BICOLOR PINK</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE PASTELLA 50CM</td><td class="price-col">$0.58</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE PASTELLA 60CM PINK</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE PIACERE 60CM LAVENDER</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>ROSE SILANTOI 60CM</td><td class="price-col">$0.64</td></tr>
-          <tr><td>1 QB</td><td>120ST</td><td>SCABIOSAS FOCAL LAVENDER OPEN CUT 60CM</td><td class="price-col">$0.66</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>SPRAY ROSES MAJOLICA 60CM WHITE</td><td class="price-col">$0.68</td></tr>
-          <tr><td>1 QB</td><td>100ST</td><td>SPRAY ROSES MAJOLICA 70CM WHITE</td><td class="price-col">$0.79</td></tr>
-          <tr><td>1 QB</td><td>120ST</td><td>SPRAY ROSES SAHARA 40CM CREAM</td><td class="price-col">$0.54</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 60CM PINK</td><td class="price-col">$0.32</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 60CM PURPLE</td><td class="price-col">$0.32</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 60CM WHITE</td><td class="price-col">$0.32</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 70CM PINK</td><td class="price-col">$0.34</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 70CM PURPLE</td><td class="price-col">$0.34</td></tr>
-          <tr><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 70CM WHITE</td><td class="price-col">$0.34</td></tr>
+          <tr><td>1 QB2</td><td>180 ST</td><td>ACHILLEA PASTEL 55CM ORANGE</td><td class="price-col">$0.25</td></tr>
+          <tr><td>1 QB2</td><td>180 ST</td><td>ACHILLEA PASTEL 60CM ORANGE</td><td class="price-col">$0.27</td></tr>
+          <tr><td>1 QB2</td><td>60 ST</td><td>CHRYSANTHEMUM YOLK 70CM</td><td class="price-col">$0.58</td></tr>
+          <tr><td>1 QB2</td><td>300 ST</td><td>CRASPEDIA BILLY BALLS 60CM YELLOW</td><td class="price-col">$0.20</td></tr>
+          <tr><td>1 QB2</td><td>300 ST</td><td>CRASPEDIA BILLY BALLS 70CM YELLOW</td><td class="price-col">$0.25</td></tr>
+          <tr><td>1 QB2</td><td>12 BU</td><td>GYPSOPHILA XLENCE 250GR WHITE</td><td class="price-col">$4.30</td></tr>
+          <tr><td>1 QB2</td><td>160 ST</td><td>HYPERICUM SUPER 60CM GREEN</td><td class="price-col">$0.30</td></tr>
+          <tr><td>1 QB2</td><td>140 ST</td><td>HYPERICUM SUPER 70CM GREEN</td><td class="price-col">$0.26</td></tr>
+          <tr><td>1 QB2</td><td>120 ST</td><td>RANUNCULOS NIGELLA BLACK PODS 60CM</td><td class="price-col">$0.42</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE BUMBLEBEE 60CM</td><td class="price-col">$0.47</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE CABARET 50CM</td><td class="price-col">$0.43</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE CABARET 60CM</td><td class="price-col">$0.47</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE COTTON X-PRESSION 60CM BLUSH</td><td class="price-col">$0.57</td></tr>
+          
+          <tr class="freedom-row"><td>1 QB2</td><td>100 ST</td><td>ROSE FREEDOM 50CM RED</td><td class="price-col">$0.54</td></tr>
+          <tr class="freedom-row"><td>1 QB2</td><td>100 ST</td><td>ROSE FREEDOM 60CM RED</td><td class="price-col">$0.62</td></tr>
+          <tr class="freedom-row"><td>1 QB2</td><td>100 ST</td><td>ROSE FREEDOM 70CM RED</td><td class="price-col">$0.71</td></tr>
+          
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE HOT EXPLORER 60CM</td><td class="price-col">$0.47</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE HOT EXPLORER 70CM</td><td class="price-col">$0.51</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE MONDIAL 60CM WHITE</td><td class="price-col">$0.54</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE NINA 50CM ORANGE</td><td class="price-col">$0.45</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE NINA 60CM ORANGE</td><td class="price-col">$0.50</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE PALOMA 50CM BICOLOR PINK</td><td class="price-col">$0.43</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE PALOMA 60CM BICOLOR PINK</td><td class="price-col">$0.48</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE PASTELLA 50CM</td><td class="price-col">$0.43</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE PASTELLA 60CM PINK</td><td class="price-col">$0.47</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE PIACERE 60CM LAVENDER</td><td class="price-col">$0.47</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>ROSE SILANTOI 60CM</td><td class="price-col">$0.46</td></tr>
+          <tr><td>1 QB2</td><td>120 ST</td><td>SCABIOSAS FOCAL LAVENDER OPEN CUT 60CM</td><td class="price-col">$0.41</td></tr>
+          <tr><td>1 QB2</td><td>100 ST</td><td>SPRAY ROSES MAJOLICA 70CM WHITE</td><td class="price-col">$0.66</td></tr>
+          <tr><td>1 QB2</td><td>120 ST</td><td>SPRAY ROSES SAHARA 40CM CREAM</td><td class="price-col">$0.63</td></tr>
+          <tr><td>1 QB2</td><td>250 ST</td><td>VERONICA SKYLER 60CM PURPLE</td><td class="price-col">$0.26</td></tr>
+          <tr><td>1 QB2</td><td>250 ST</td><td>VERONICA SKYLER 60CM WHITE</td><td class="price-col">$0.27</td></tr>
+          <tr><td>1 QB2</td><td>250 ST</td><td>VERONICA SKYLER 70CM PINK</td><td class="price-col">$0.27</td></tr>
+          <tr><td>1 QB2</td><td>250 ST</td><td>VERONICA SKYLER 70CM PURPLE</td><td class="price-col">$0.27</td></tr>
+          <tr><td>1 QB2</td><td>250 ST</td><td>VERONICA SKYLER 70CM WHITE</td><td class="price-col">$0.27</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="cta-container">
-      <a href="mailto:sales@muchflowers.com" class="btn">CONFIRM YOUR ORDER</a>
+      <a href="https://wa.me/TU_NUMERO_AQUI" class="btn">CLICK HERE TO ORDER NOW</a>
     </div>
 
     <div class="footer">
-      <p>Miami Floral Hub | All items available for pickup or delivery to your truck company.</p>
-      <p><em>Prices and availability are subject to change without notice.</em></p>
+      <p>Direct from Miami Warehouse | Freshness Guaranteed</p>
+      <p>You are receiving this because you are a valued partner of Much Flowers.</p>
     </div>
   </div>
 
