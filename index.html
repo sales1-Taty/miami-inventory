@@ -8,7 +8,6 @@
   .header { background-color: #000; color: #ffffff; padding: 30px; text-align: center; }
   .header h1 { margin: 0; font-size: 26px; letter-spacing: 1px; }
   
-  /* NUEVA SECCION DE LIQUIDACION 0.05 */
   .clearance-promo { background-color: #ffbe0b; color: #d90429; text-align: center; padding: 15px; font-weight: 900; font-size: 22px; border: 3px solid #d90429; margin: 10px 20px; text-transform: uppercase; }
   .clearance-promo span { display: block; font-size: 16px; color: #000; margin-top: 5px; }
 
@@ -23,13 +22,14 @@
   .price-col { text-align: right; font-weight: bold; color: #333; }
   .qty-col { font-weight: bold; color: #555; }
 
-  /* ESTILO PARA FILAS DE 0.05 */
   .row-05 { background-color: #ffff00 !important; color: #d90429 !important; font-weight: bold; }
+  .row-05 td { border-bottom: 1px solid #ffd700; }
   .row-05 .price-col { color: #d90429 !important; font-size: 16px; }
 
-  /* ESTILO PARA ROSAS ROJAS */
   .highlight-red { color: #d90429; font-weight: bold; }
   .highlight-red .price-col { color: #d90429; }
+
+  .promo-note { font-size: 11px; font-style: italic; color: #d90429; margin-bottom: 20px; font-weight: bold; }
 
   .cta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 20px; background: #f9f9f9; }
   .btn-wa { background-color: #25d366; color: white; padding: 12px; text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; font-size: 14px; display: block; }
@@ -80,6 +80,7 @@
           <tr class="row-05"><td>1 QB</td><td>250ST</td><td>VERONICA SKYLER 60CM WHITE</td><td class="price-col">$0.05</td></tr>
         </tbody>
       </table>
+      <p class="promo-note">* "Buy @ 0.05cvo/st" promotion applies to the "Ready Now" table only.</p>
 
       <div class="date-header">TODAY'S TRUCK</div>
       <table>
@@ -104,9 +105,9 @@
           <tr><td>5 QB</td><td>160ST</td><td>HYPERICUM SUPER 60CM PINK</td><td class="price-col">$0.41</td></tr>
           <tr><td>22 QB</td><td>160ST</td><td>HYPERICUM SUPER 60CM RED</td><td class="price-col">$0.41</td></tr>
           
-          <tr class="highlight-red"><td>2 QB</td><td>100ST</td><td>ROSE EXPLORER 50CM RED</td><td class="price-col">$1.26</td></tr>
-          <tr class="highlight-red"><td>4 QB</td><td>100ST</td><td>ROSE EXPLORER 60CM RED</td><td class="price-col">$1.36</td></tr>
-          <tr class="highlight-red"><td>4 QB</td><td>100ST</td><td>ROSE EXPLORER 70CM RED</td><td class="price-col">$1.46</td></tr>
+          <tr class="highlight-red"><td>7 QB</td><td>100ST</td><td>ROSE EXPLORER 50CM RED</td><td class="price-col">$1.26</td></tr>
+          <tr class="highlight-red"><td>19 QB</td><td>100ST</td><td>ROSE EXPLORER 60CM RED</td><td class="price-col">$1.36</td></tr>
+          <tr class="highlight-red"><td>10 QB</td><td>100ST</td><td>ROSE EXPLORER 70CM RED</td><td class="price-col">$1.46</td></tr>
           <tr class="highlight-red"><td>2 QB</td><td>100ST</td><td>ROSE FREEDOM 70CM RED</td><td class="price-col">$1.41</td></tr>
           
           <tr><td>1 QB</td><td>100ST</td><td>ROSE HOT EXPLORER 60CM</td><td class="price-col">$1.06</td></tr>
